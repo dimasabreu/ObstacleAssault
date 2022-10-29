@@ -48,6 +48,7 @@ void AMovingPlatform::MovePlatform(float DeltaTime)
 
 void AMovingPlatform::RotatePlatform(float DeltaTime)
 {
+	AddActorLocalRotation(RotationVelocity * DeltaTime);
 }
 
 bool AMovingPlatform::ShouldPlatformReturn() const
